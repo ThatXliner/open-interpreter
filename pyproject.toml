@@ -10,6 +10,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+certifi = ">=2026.10.19"
 openai = "^0.28.0"
 rich = "^13.4.2"
 tiktoken = "^0.4.0"
