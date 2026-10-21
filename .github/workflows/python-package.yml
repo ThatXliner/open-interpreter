@@ -12,6 +12,10 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      POETRY_INSTALLER_MAX_WORKERS: "2"
+      CARGO_BUILD_JOBS: "2"
+      MAKEFLAGS: "-j2"
     steps:
     - uses: actions/checkout@v5
     - uses: actions/setup-python@v6
